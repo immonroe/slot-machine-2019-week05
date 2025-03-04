@@ -2,6 +2,8 @@
 
 ### Goal: Build a Simple Slot Machine
 
+### [Live Preview](https://immonroe.github.io/slot-machine-2019-week05/)
+
 Build a simple slot machine with minimum 5 items per reel and 3 reels - user should be able to bet min or max and have their total update
 
 ### How to submit your code for review:

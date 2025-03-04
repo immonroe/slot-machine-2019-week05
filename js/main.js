@@ -44,4 +44,3 @@ function betMaximum() {
         document.querySelector('#total').innerHTML = total
     }
 }
-
