@@ -1,18 +1,47 @@
-const reelOne = document.querySelector('#reelOne')
-const reelTwo = document.querySelector('#reelTwo')
-const reelThree = document.querySelector('#reelThree')
 const betMin = document.querySelector('#betMin')
 const betMax = document.querySelector('#betMax')
-const total = document.querySelector('#total') // should I set a hard value for this like 1000?
 
-betMin.addEventListener('click', test)
-betMax.addEventListener('click', testTwo)
+betMin.addEventListener('click', betMinimum)
+betMax.addEventListener('click', betMaximum)
 
-function test() {
-    console.log('betMin')
+total = 1000
+
+function betMinimum() {
+
+    reelOne = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+    reelTwo = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+    reelThree = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+
+    document.querySelector('#reelOne').innerHTML = reelOne
+    document.querySelector('#reelTwo').innerHTML = reelTwo
+    document.querySelector('#reelThree').innerHTML = reelThree
+    
+    
+    if (reelOne === reelTwo && reelTwo === reelThree) {
+        total += 100
+        document.querySelector('#total').innerHTML = total
+    } else {
+        total -= 10
+        document.querySelector('#total').innerHTML = total
+    }
 }
 
-function testTwo() {
-    console.log('betMax')
+function betMaximum() {
+
+    reelOne = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+    reelTwo = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+    reelThree = parseInt(Math.floor(Math.random() * (5 - 1 + 1)) + 1)
+
+    document.querySelector('#reelOne').innerHTML = reelOne
+    document.querySelector('#reelTwo').innerHTML = reelTwo
+    document.querySelector('#reelThree').innerHTML = reelThree
+
+    if (reelOne === reelTwo && reelTwo === reelThree) {
+        total += 10000
+        document.querySelector('#total').innerHTML = total
+    } else {
+        total -= 500
+        document.querySelector('#total').innerHTML = total
+    }
 }
 
