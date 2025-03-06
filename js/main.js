@@ -37,10 +37,10 @@ function betMaximum() {
     document.querySelector('#reelThree').innerHTML = reelThree
 
     if (reelOne === reelTwo && reelTwo === reelThree) {
-        total += 10000
+        total += 5000
         document.querySelector('#total').innerHTML = total
     } else {
-        total -= 500
+        total -= 50
         document.querySelector('#total').innerHTML = total
     }
 }
