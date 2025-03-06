@@ -8,25 +8,38 @@
 		<title>Slot Machine</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/coin.css">
 	</head>
 	<body>
-		<h1>Slot Machine</h1>
-
+		<header>
+			<h1>Slot Machine</h1>
+		</header>
 		<main>
 			<section class="reel-container">
-				<section id="reelOne">Reel 1</section>
-				<section id="reelTwo">Reel 2</section>
-				<section id="reelThree">Reel 3</section>
+				<section id="reelOne"></section>
+				<section id="reelTwo"><div id="center">
+					<div id=coinBox>
+						<div id="coin">
+						</div>
+					</div>
+				</div></section>
+				<section id="reelThree"></section>
 			</section>
 			<section class="bet-container">
 				<button id="betMin">Bet Min</button>
 				<button id="betMax">Bet Max</button>
 			</section>
-			<p id="total">1000</p>
+			<p id="total">Current total: 1000</p>
 		</main>
 		
+		<footer>
+
+		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

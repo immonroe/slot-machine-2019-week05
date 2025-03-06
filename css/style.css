@@ -11,8 +11,58 @@
 /* LAYOUT
 /*******************************************/
 
+header {
+  text-align: center;
+}
 
+/* footer {
+
+} */
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  color: #fff;
+  background: #000;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.reel-container {
+  display: flex;
+  font-size: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50rem;
+}
+
+.bet-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 2.5rem;
+}
+
+#total {
+  align-self: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+button {
+  padding: 1rem;
+  background: #111;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
