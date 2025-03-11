@@ -8,9 +8,9 @@ total = 1000
 
 function betMinimum() {
 
-    reelOne = parseInt(Math.floor(Math.random() * (5)) + 1)
-    reelTwo = parseInt(Math.floor(Math.random() * (5)) + 1)
-    reelThree = parseInt(Math.floor(Math.random() * (5)) + 1)
+    reelOne = Math.floor(Math.random() * (5)) + 1
+    reelTwo = Math.floor(Math.random() * (5)) + 1
+    reelThree = Math.floor(Math.random() * (5)) + 1
 
     document.querySelector('#reelOne').innerHTML = reelOne
     document.querySelector('#reelTwo').innerHTML = reelTwo
@@ -28,16 +28,16 @@ function betMinimum() {
 
 function betMaximum() {
 
-    reelOne = parseInt(Math.floor(Math.random() * (5)) + 1)
-    reelTwo = parseInt(Math.floor(Math.random() * (5)) + 1)
-    reelThree = parseInt(Math.floor(Math.random() * (5)) + 1)
+    reelOne = Math.floor(Math.random() * (5)) + 1
+    reelTwo = Math.floor(Math.random() * (5)) + 1
+    reelThree = Math.floor(Math.random() * (5)) + 1
 
     document.querySelector('#reelOne').innerHTML = reelOne
     document.querySelector('#reelTwo').innerHTML = reelTwo
     document.querySelector('#reelThree').innerHTML = reelThree
 
     if (reelOne === reelTwo && reelTwo === reelThree) {
-        total += 5000
+        total += 500
         document.querySelector('#total').innerHTML = `Current total: ${total}`
     } else {
         total -= 50
